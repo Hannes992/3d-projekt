@@ -19,12 +19,13 @@ header {
         height: 3em;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
         /* border: 3px solid black; */
         background-color: rgb(180, 179, 179);
         padding-bottom: 0px;
         gap: 32px;
+        padding-left: 3em;
         div {
             display: flex;
             align-items: center;
@@ -35,6 +36,13 @@ header {
             padding: 1em;
             border-radius: 1em;
         }
+        div:hover {
+            background-color: rgb(97, 97, 97);
+        }
+
+        a {
+            text-decoration: none;
+        }
        
               
             
@@ -44,7 +52,81 @@ header {
  .hero-section {
         display: flex;
         width: 100vw;
-        height: 30em;
+        height: 40em;
         border: 1px solid black;
-
+        flex-direction: column;
+        background-image: url(./images/img-background.png);
+        background-size: contain;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        text-align: center;
+        color: antiquewhite;
+        background-color: grey;
     } 
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(180, 179, 179);;
+
+
+    .object1 {
+        height: 50em;
+        display: flex;
+        flex-direction: row;
+        .article1 {
+            display: flex;
+            width: 50vw;
+            padding: 2em;
+            .box {
+                margin: 0.5rem ;
+                width: 100%;
+                background-color: grey;
+                border-radius: 2%;
+            }
+        }
+        .objct1 {
+            width: 50vw;
+             p {
+                text-align: center;
+                padding: 3px;
+            }
+        }
+    }
+
+    .object2 {
+        height: 50em;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        .article2 {
+            width: 50vw;
+             p {
+                text-align: center;
+                padding: 3px;
+            }
+        }
+        .objct2 {
+            display: flex;
+            width: 50vw;
+            padding: 2em;
+            .box {
+                margin: 0.5rem ;
+                width: 100%;
+                background-color: grey;
+                border-radius: 2%;
+            }
+        }
+    }
+}
+
+
+
+
+footer {
+    height: 20vh;
+    background-color: black;
+    margin-bottom: 0;
+    color: antiquewhite;
+}
