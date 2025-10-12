@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>DH-Projekt</title>
     <link rel="stylesheet" href="index.css">
+<!-- 
+    <script src="https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.157.0/examples/js/controls/OrbitControls.js"></script> -->
+    <script type="module" src="main.js"></script>
+</script>
 </head>
 <body>
     
@@ -12,16 +17,13 @@
         <h1>Titel!</h1>
         <nav>      
             <div>
-            <a href="#">Main Page</a>    
+            <a href="#">About</a>    
             </div>
             <div>
-            <a href="#">About</a>
+            <a href="#object1" class="anchor">Article 1</a>    
             </div>
             <div>
-            <a href="#">Article 1</a>    
-            </div>
-            <div>
-            <a href="#">Article 2</a>    
+            <a href="#object2" class="anchor">Article 2</a>    
             </div>
         </nav>
     </header>
@@ -30,24 +32,56 @@
             <h3>Thema des DH-Projektes (der Modelle)</h3>
             <p>Kurze Einführung in das Projekt</p>
         </section>
+        
         <section class="main-content">
-           <section class="object1">
+          <section class="object1" id="object1">
                 <div class="article1">
                 <div class="box">
-                    <p>Hier kommt der Text hinein</p>
+                    <div class="ueberschrift">
+                        <h3>Geschichte der alten Synagoge</h3>
+                    </div>
+                    <p class="headtext">Am Standort der in der Reichspogromnacht am 9. November 1938 niedergebrannten Osnabrücker Synagoge erinnert ein Denkmal an das von den Nationalsozialisten zerstörte Gotteshaus und an die Entrechtung, Verfolgung, Deportation und Ermordung der Jüd:innen der Stadt.</p>
+                    <p>Das Bedürfnis nach einem Gedenkort an die zerstörte jüdische Gemeinde bestand bereits in der unmittelbaren Nachkriegszeit. Zwischen 1949 und 1969 bildeten zwei Text- und eine die Synagoge zeigende Bronzetafeln eine kleine Gedenkanlage. 1978 wurde der östliche Abschnitt der Rolandstraße in die „Alte-Synagogen-Straße“ umbenannt und Bronzetafeln in deutscher und hebräischer Sprache an der Hauswand des Gebäudes der Osnabrücker Bezirksregierung angebracht.
+                    Dieser Standort am „Gebäude der Täter“ rief Kritik hervor[1] und ab 1988 reiften Pläne für eine „Gedenkstätte Alte Synagoge“, in der die Geschichte der jüdischen Gemeinde dokumentiert und ausgestellt werden sollte. Diese Pläne scheiterten am abschlägigen Bescheid der Landesregierung. 2004 entstand auf Initiative der Gesellschaft für Christlich-Jüdische Zusammenarbeit das Mahnmal „Alte Synagoge“, das am 9. November – 66 Jahre nach der Reichspogromnacht – eingeweiht wurde.[2]</p>
+                    <p>Das von Richard-Wilhelm Bitter entworfene und von 200 Schüler:innen der Berufsbildenden Schulen der Stadt und des Landkreises Osnabrück umgesetzte Denkmal besteht aus vier Elementen. Ein gebrochener Davidstern steht im Zentrum des Gebildes und symbolisiert einerseits das gebrochene jüdische Leben, andererseits aber auch das gebrochene Verhältnis zwischen Jüd:innen und Deutschen. Vier Bronzetafeln mit Texten von Peter Junk erzählen die Leidensgeschichte der Osnabrücker Jüd:innen in vier Abschnitten: Entrechtung, Verfolgung, Deportation und Ermordung. 
+                    Sie hängen am aus Stahldraht gefertigten Corpus des Denkmals. Dieser Drahtkäfig ist mit Osnabrücker Kalkstein gefüllt, dem Baumaterial, aus dem die 1938 zerstörte Synagoge bestanden hatte. Ein aus 162 Stahlstreben bestehender Zaun flankiert das Denkmal und erinnert an 162 im Rahmen der Shoah ermordete Jüd:innen aus der Stadt.[3] </p>
                 </div>                                            
                 </div>
                 <div class="objct1">
-                <p>Hier kommt das 3D Modell hinein</p>
+                <div class="box">
+                <div class="ueberschrift"><h3>Alte Synagoge Osnabrück (Modell 1:500)</h3></div>
+                <div class="canvas-wrapper" id="model1">
+
+                </div>
+                </div>
                 </div>
            </section>
-           <section class="object2">
-                <div class="article2">
-                <p>Hier kommt der Text hinein</p>
-                </div>
+
+           <div class="break">
+
+           </div>
+           <section class="object2" id="object2">
                 <div class="objct2">
                 <div class="box">
-                    <p>Hier kommt der Text hinein</p>
+                <div class="ueberschrift">
+                <h3>Denkmal: Der Gefesselte</h3>
+                </div>
+                <div class="canvas-wrapper" id="model2">
+                </div>
+                </div>
+                </div>
+                <div class="article2">
+                <div class="box">
+                    <div class="ueberschrift">
+                        <h3>Geschichte des Denkmals</h3>
+                    </div>
+                    <p class="headtext">An der ehemaligen Dominikanerkirche – der heutigen Kunsthalle – am Rande der Osnabrücker Altstadt befindet sich die Skulptur „Der Gefesselte“, ein Mahnmal für die Opfer von Krieg und Gewalt und Erinnerung sowohl an das gescheiterte Attentat auf Adolf Hitler am 20. Juli 1944 als auch den Volksaufstand in der DDR am 17. Juni 1953. Entworfen wurde sie vom Bildhauer Gerhard Marcks.</p>
+                    <p>Die Errichtung des Mahnmals entsprang einem in der Nachkriegszeit gewachsenen Bedürfnis nach einem öffentlichen Gedenkort für diejenigen, die in den nationalsozialistischen Konzentrationslagern gelitten hatten, einerseits und für diejenigen, die Widerstand gegen das NS-Regime geleistet hatten – konkret in Form des gescheiterten Attentats auf Adolf Hitler am 20. Juli 1944 –, andererseits.
+                    Etwa zeitgleich – ab dem 17. Juni 1953 – forderten Protestierende in der Deutschen Demokratischen Republik in einem landesweiten Volksaufstand mehr demokratische Rechte und ein geeintes Deutschland. Anstatt separate Gedenkorte für die einzelnen Ereignisse zu schaffen, sollte ein gemeinsames Denkmal „den Opfern für Wahrheit und Freiheit“ gewidmet werden.[1]</p>
+                    <p>Die Entscheidung bei der Wahl des Künstlers im Frühjahr 1962 fiel auf den deutschen Bildhauer Gerhard Marcks.[2] In den Jahren 1919 bis 1925 am Weimarer Bauhaus als Meister und danach in führender Position an der Burg Giebichstein bei Halle tätig, sah sich Marcks während der NS-Zeit Repressionen ausgesetzt: Er wurde mit einem Berufsverbot belegt und seine Arbeiten aus dem öffentlichen Raum verbannt.[3] 
+                    In der Nachkriegszeit erhielten insbesondere seine Gestaltungen von Gedenkorten, sowie sakrale Arbeiten, besondere Beachtung.[4] Sein künstlerischer Bezugspunkt blieb, auch nach dem Zweiten Weltkrieg, der Mensch.[5]</p>
+                    <p>Das Mahnmal „Der Gefesselte“ besteht aus Basaltlava und stellt in einer Höhe von 3,40m einen an einem Pfahl gefesselten Mann mit gesenktem Haupt dar. Die Höhe und Form verleihen der Skulptur etwas Monumentales, die Figur blickt auf die Betrachtenden herab. Ihre lethargische Haltung drückt Wehrlosigkeit und Trauer aus. Die Formensprache dient der Abstraktion, um die verschiedenen Ereignisse, an die das Mahnmal erinnern soll, umfassen zu können.
+                    Gleichzeitig entspricht sie dem unpolitischen, religiösen Verständnis des Künstlers.[6] Das Mahnmal wurde am 20. Juli 1964 enthüllt. Seitdem dient sie als Gedenkort für den 20. Juli 1944 – zu dessen Anlass die Stadt Osnabrück jährlich einen Kranz am Denkmal niederlegt – und den 17. Juni 1953, sowie für das Kriegsende am 8. Mai 1945 und die Opfer der Konzentrationslager.[7] Trotz der vom Künstler Marcks intendierten politischen Neutralität ist „Der Gefesselte“ das Ziel von Vandalismus geworden: Im Juli 2018 beschmierten Unbekannte Sockel und Inschrift der Skulptur mit brauner Acrylfarbe.[8] </p>
                 </div> 
                 </div>
            </section> 
@@ -59,12 +93,12 @@
         <section class="logo">
 
         </section>
-        <section class="contact">
+        <div class="contact">
             <ul>
                 <li>Contact</li>
                 <li>Impressum</li>
             </ul>
-        </section>
+        </div>
     </footer>
 
 </body>

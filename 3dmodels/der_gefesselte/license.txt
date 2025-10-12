@@ -1,0 +1,11 @@
+Model Information:
+* title:	Der Gefesselte
+* source:	https://sketchfab.com/3d-models/der-gefesselte-4c86cd2934714004b87f735b552c0739
+* author:	nghm@uos (https://sketchfab.com/chrass)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Der Gefesselte" (https://sketchfab.com/3d-models/der-gefesselte-4c86cd2934714004b87f735b552c0739) by nghm@uos (https://sketchfab.com/chrass) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
