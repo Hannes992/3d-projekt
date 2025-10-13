@@ -105,7 +105,8 @@ header {
     .object1 {
         padding-top:70px;
         margin-top: -70px;
-        height: 80vh;
+        height: auto;
+        min-height: 70wh;
         display: flex;
         flex-direction: row;
         .article1 {
@@ -128,10 +129,10 @@ header {
             height: auto;
             .ueberschrift {
             text-align: center;
-            width: 100%;
+            max-width: 100%;
             margin-top: 0.5em;
             overflow: hidden;
-            } 
+            }
         p {
             text-align: center;
             padding: 0.5em;
@@ -245,6 +246,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     &:hover {
         cursor: grab;
     }
