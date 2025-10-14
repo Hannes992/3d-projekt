@@ -19,6 +19,10 @@ header {
     width: 100vw;
     background-color: #ffffff;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* über allem anderen */
     h1 {
         text-align: left;
         font-family: sans-serif;
@@ -39,25 +43,28 @@ header {
         gap: 32px;
         padding-left: 3em;
         border-bottom: 1px solid black;
-        div {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #ffffff;
-            height: 2em;
-            width: 10em;
-            padding: 1em;
-            border-radius: 1em;
+
+        .nav-item {
+        display: inline-flex;            /* macht die ganze Fläche klickbar */
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        height: 2em;
+        width: auto;
+        padding: 1em;
+        border-radius: 1em;
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+        &:hover {
+            background-color: rgb(97, 97, 97);
+            color: #fff;
         }
-        div:hover {
+        &:active {
             background-color: rgb(97, 97, 97);
         }
-
-        a {
-            text-decoration: none;
-        }
-       
-              
+        
+    }              
             
     }
 }
@@ -68,8 +75,9 @@ header {
         /* padding-top: 10em; */
         background-color: #23272a;
         box-shadow: inset 24px 24px 48px #1c1f21,
-            inset -24px -24px 48px #2a2f33;
+        inset -24px -24px 48px #2a2f33;
         width: 100vw;
+        padding-top: 6rem; /* an deine Header-Höhe anpassen */
     }
 
  .hero-section {
@@ -88,11 +96,16 @@ header {
         color: antiquewhite;
         /* background-color: #23272a; */
         padding-top: 8em;
-
-        h1 {
-            text-align: center;
+        .background {
+            position: sticky;
+            z-index: 1;
+            background-color: rgb(28, 31, 33, 0.4);
+            top: 0;
+            width: 60%;
+            p {
+                margin-top: 1em;
+            }
         }
-
         
     } 
 
@@ -203,8 +216,7 @@ header {
         }
     }
 
-
-           .box {
+        .box {
                 display: flex;
                 flex-direction: column;
                 margin: 0.5rem ;
@@ -226,8 +238,9 @@ header {
 footer {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     padding: 1em;
-    min-height: 20vh;
+    min-height: 10vh;
     width: 100vw;
     background-color: #ffffff;
     margin-bottom: 0;
@@ -235,7 +248,35 @@ footer {
         .contact {
         display: flex;
     }
-}
+    margin-top: 2em;
+    .contact1 {
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            .footnote {
+                gap: 10px;
+            }
+        }
+    .contact2 {
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            .footnote {
+                gap: 10px;
+            }
+        }
+    
+    .footnote {
+        text-decoration: none;
+        font: 1em 'Courier New';
+        font-weight: bold;
+        color: #000000;
+    }    
+        
+    }
+
 
 .canvas-wrapper {
     padding: 2em 2em;
@@ -254,14 +295,8 @@ footer {
         cursor: grabbing;
     }
 };
-/* :target.anchor::before {
-  content: '';
-  display: block;
-  height:      75px;
-  margin-top: -75px;
-  visibility: hidden;
-} */
- 
+
+
 
 /* Mobile/Layout-Engstellen */
 @media (max-width: 900px) {

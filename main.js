@@ -8,6 +8,7 @@ window.addEventListener('scroll', function() {
   document.querySelector('.hero-section').style.backgroundPosition = 'center ' + (scrolled * 0.1) + 'px';
 });
 
+
 let object1 = document.querySelector("#model1");
 let object2 = document.querySelector("#model2");
 
