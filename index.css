@@ -245,18 +245,16 @@ footer {
     background-color: #ffffff;
     margin-bottom: 0;
     color: black;
-        .contact {
-        display: flex;
-    }
-    margin-top: 2em;
+    margin-top: 1em;
     .contact1 {
-            justify-content: center;
+            justify-content: top;
+            text-align: center;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             width: 50%;
-            .footnote {
+            /* .footnote {
                 gap: 10px;
-            }
+            } */
         }
     .contact2 {
             justify-content: center;
@@ -295,7 +293,6 @@ footer {
         cursor: grabbing;
     }
 };
-
 
 
 /* Mobile/Layout-Engstellen */
